@@ -2,6 +2,10 @@
 $text= $_POST['testo'];
 $censura=$_POST['censura'];
 
+$text_cen=str_replace($censura,'***',$text);
+
+
+
 $array=['io','tu','egli'];
 echo '<pre>';
 var_dump($array);
@@ -21,8 +25,8 @@ echo '</pre>';
 
     <h1><?php echo $text?></h1>
     <p><?php echo strlen($text) ?></p>
-    <h1><?php echo str_replace($censura,'***',$text)?></h1>
-    <p><?php echo strlen(str_replace($censura,'***',$text)) ?></p>
+    <h1><?php echo $text_cen?></h1>
+    <p><?php echo strlen($text_cen) ?></p>
 
 </body>
 
