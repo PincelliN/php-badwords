@@ -1,7 +1,11 @@
 <?php
-$text= $_GET['testo'];
-$censura=$_GET['censura'];
+$text= $_POST['testo'];
+$censura=$_POST['censura'];
 
+$array=['io','tu','egli'];
+echo '<pre>';
+var_dump($array);
+echo '</pre>';
 ?>
 
 <!DOCTYPE html>
